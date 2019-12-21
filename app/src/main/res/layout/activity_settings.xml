@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Включить уведомления"
+        android:id="@+id/notify_switch"
+        android:layout_marginTop="35dp"
+        android:checked="false"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настройки приложения"
+        android:id="@+id/textView3"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/notify_switch"
+        android:layout_alignStart="@+id/notify_switch" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:id="@+id/settings_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Звук уведомления"
+        android:id="@+id/sound_switch"
+        android:layout_marginTop="36dp"
+        android:checked="false"
+        android:layout_below="@+id/notify_switch"
+        android:layout_alignRight="@+id/notify_switch"
+        android:layout_alignEnd="@+id/notify_switch"
+        android:layout_alignLeft="@+id/notify_switch"
+        android:layout_alignStart="@+id/notify_switch" />
+
+</RelativeLayout>
